@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+#grilla {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "nav productos publicidad"
+      "nav servicios publicidad"
+      "footer footer footer";
+    grid-template-rows: 150px auto auto auto; 
+    grid-template-columns: 1fr 10fr 1fr;
+ }
+ 
+ .border {
+    border: 1px solid black;
+ }
+ 
+ header {
+    grid-area: header;
+    display: flex;
+    background-image: url(../assets/images/ai-generated-rustic-table-showcases-array-of-potted-succulents-and-cacti-in-soft-natural-light-free-photo.jpg);
+ }
+ footer {
+    grid-area: footer;
+ }
+ section#productos {
+    grid-area: productos;
+    display: flex;
+    width: auto;
+    height: auto;   
+ }
+ section#servicios {
+    grid-area: servicios;
+    display: flex;
+    justify-content: center; 
+    width: auto;
+    height: auto;    
+ }
+ nav {
+    grid-area: nav;
+    display: flex;
+ }
+ aside {
+    grid-area: publicidad;
+    display: flex;
+ }
+ 
+
+
+   
+.titulo{
+    font-family:'sans-serif';
+    font-weight: 600;
+    font-size: 250%;
+    text-align:center ;
+    margin-top: 50px;
+}
+
+
+.parrafo{
+    font-family: 'Arial Narrow';
+    font-size: 150%;
+    justify-content: center;
+}
+    
+
+
+
+.ft{
+    
+    font-weight: 600;
+    font-size:small;
+}
+
+#estructura{
+    display: grid;
+    grid-template-rows: 20% auto 10%;
+    
+}
+
+
+.contenedor-en{
+    align-self: flex-end;
+    flex-grow: 1;
+    
+    
+}
+
+.contenedor{
+    flex-grow: 1;  
+   
+}
+
+.precio-text{
+    font-family:'Tahoma';
+    font-weight: 600;
+    font-size: 150%;
+}
+
+.contenedorsec2{
+    display: flex;
+    gap:100px;
+    justify-content: center;
+    align-items: center;
+    }
+
+.item{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.contenedormues{
+    width: auto;
+    height: auto;
+    text-align:center;
+    width: 200px;
+    height: auto;
+    
+}
+
+.contenedormues img{
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+   
+    
+}
+
+.contenedor-header{
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    padding:0px;
+    background-image: url(../assets/images/ai-generated-rustic-table-showcases-array-of-potted-succulents-and-cacti-in-soft-natural-light-free-photo.jpg);
+    border-bottom: solid 1px grey;
+
+}
+
+
+body{
+    margin: 30px;
+    padding: 0px;
+
+}
+
+.imgmues{
+    display: flex;
+    width: 200px;
+    height: 200px; 
+}
+
+.tienda-header{
+    
+    justify-content: space-between;
+    padding: 30px 0 40px 0;
+}
+
+.container-icon{
+    position: relative;
+}
+
+.count-products{
+    position: absolute;
+    top: 55%;
+    right: 0;
+
+    background-color: #000;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#contador-productos{
+    font-size: 12px;
+}
+
+.container-cart-products{
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+    
+}
+
+.cart-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+}
+
+.info-cart-product{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+}
+
+.titulo-producto-carrito{
+    font-size: 20px;
+}
+
+.precio-producto-carrito{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.cantidad-producto-carrito{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.icon-close{
+    width: 25px;
+    height: 25px;
+}
+
+.icon-close:hover{
+    stroke: red;
+    cursor: pointer;
+}
+
+.cart-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.cart-total h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.total-pagar{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.hidden-cart{
+    display: none;
+}
